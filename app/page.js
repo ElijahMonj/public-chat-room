@@ -15,10 +15,12 @@ export default function Home() {
   function isLoggedIn (){
     if (user===0){
       return(
-        <Login/>
+        <Dashboard />
       )
     }else{
-      <Dashboard />
+      return(
+        <Dashboard />
+      ) 
     }
   }
 
